@@ -1,0 +1,204 @@
+@charset 'utf-8';
+@import 'media.css';
+
+html,body{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	box-sizing: border-box;
+}
+
+a{
+	text-decoration: none!important;
+}
+::-webkit-scrollbar {
+	width: 0px;
+	height: 0px;
+}
+::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px skyblue; 
+	border-radius: 1px;
+}
+
+::-webkit-scrollbar-thumb {
+	border-radius: 1px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+
+/***************** MAIN STRUCTURE STYLES PROPERTIES ***************/
+.container{
+
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	
+	margin: 20px auto;
+	border-radius: 8px;
+
+	
+}
+.row{
+	width: 100%;
+	
+}
+.title{
+	height: 50px;
+	padding: 10px;
+	font-size: 18px;
+	color: darkslategray;
+	font-weight: bolder;
+}
+
+#categorylist{
+	box-shadow: 0 0 1px grey;
+	border-radius: 8px;
+}
+
+#categorylistGroup{
+	height: 400px;
+	box-shadow: none;
+	overflow-y: scroll!important;
+}
+.list-group-item{
+	
+	border: none;
+	color: grey;
+	cursor: pointer;
+	transition:.2s
+}
+.list-group-item:hover{
+		
+	background-color: #DAEEF8;
+}
+
+/* CARD STYLE PROPERTIES */
+
+.slider{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: row;
+	padding: 10px;
+	overflow-x: scroll;
+	box-shadow: 0 0 5px grey;
+	border-radius: 8px;
+}
+
+.cardSection{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	max-width: 250px;
+	height: 360px;
+	margin: 5px 10px;
+	box-shadow: 0 0 5px grey;
+	padding: 8px;
+	border-radius: 8px;
+}
+.cardSection img{
+	width: 80%;
+	height: 40%;
+	background-position: center;
+	background-size: cover;
+	border-radius: 8px;
+}
+.cardTitle{
+	width: 200px;
+	padding: 10px;
+	text-align: left;
+	height: 50px;
+	overflow: scroll;
+	font-size: 13px;
+	font-weight: bold;
+	margin-top: 15px;
+}
+.cardPrice{
+	width: 200px;
+	padding: 5px;
+	text-align: left;
+	height: 40px;
+	overflow: scroll;
+	font-size: 20px;
+	font-weight: bold;
+	background-color: rgba(0, 0, 0, .1);
+	padding-left: 20px;
+	border-radius: 5px;
+	margin-top: 30px;
+}
+.cardInfo{
+	font-size: 11px;
+	padding: 7px;
+}
+
+.addCard{
+	width: 100%;
+}
+
+/***************** DIRECTION BUTTON SECTION ***********/
+#right{
+	margin-left: 70%;		
+}
+
+#left{
+	margin-left: 5%;
+	
+}
+.way{
+	
+	width: 30px;
+	height: 30px;
+	font-size: 25px;
+	color: dodgerblue;
+	cursor: pointer;
+	padding: 0;
+	
+}
+/**************** AUTHOR *******************/
+.authorSection{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+
+}
+#author{
+	position: absolute;
+	width: 20%;
+	text-align: center;
+	letter-spacing: 6px;
+	color: green;
+	text-shadow: 0 0 5px seagreen;
+	cursor: pointer;
+	font-size: 18px;
+	
+}
+
+
+/***** CARGO ITEM *****/
+.cargo{
+	color: green;
+}
+.dot{
+	color: grey;
+	font-size: 8px;
+}
+
+.alert{
+	position: absolute;
+	display: flex;
+	justify-content: left;
+	align-items: center;
+	flex-direction: row;
+	background-color: black!important;
+	color: white;
+	width: 300px;
+	border-radius: 15px;
+	z-index: 2;
+}
+#video{
+	width:20rem;
+	height: 350px;
+}
